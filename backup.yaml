@@ -1,0 +1,19 @@
+- hosts: huawei
+  device_type: huawei
+  stack: yes
+  task:
+    - name: Backup config for Switch Huawei
+      backup:
+        getfile: 'Yes'
+        time_template: '%Y%m%d%H'
+        dest: '/root/netmiko_project/bk_cfg'
+        source:
+        ftp_user: 'ftpuser'
+        ftp_pass: 'Huawei12#$'
+    #- name: Configure Switch Huawei with command
+    #  config:
+    #    command: 'interface 10GE3/17/6 || eth-trunk 126 || commit'
+    #    file: 'test.txt'
+    #- name: View info
+    #  view:
+    #    command: 'dis cur interface 10GE3/17/6 || dis version'

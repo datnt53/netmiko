@@ -1,0 +1,3 @@
+interface 10GE3/17/6
+eth-trunk 126
+commit
