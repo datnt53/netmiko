@@ -1,8 +1,8 @@
 [huawei]
-10.240.198.5
+10.10.10.10
 
 [huawei:vars]
-username=root
-password=Huawei12#$
+username=
+password=
 port=22
 verbose=False
